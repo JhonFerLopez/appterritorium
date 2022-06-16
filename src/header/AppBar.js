@@ -18,7 +18,7 @@ export default class AppBar extends React.Component {
                 </Center>
             </HStack>
             <HStack>
-                <IconButton icon={<Icon as={MaterialIcons} name="shopping-cart" size="9" color="white" />} />
+                <IconButton icon={<Icon as={MaterialIcons} name="shopping-cart" size="8" color="white" />} />
             </HStack>
         </HStack>
     </>;

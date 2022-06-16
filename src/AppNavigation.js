@@ -42,26 +42,26 @@ export default class AppContainer extends React.Component {
                     <Banner/>
 
                     <VStack space={6} mt="5" mb="5" alignItems="center" >
-                        { this.state.products.map( (item) =>  
-                            <Box alignItems="center" w="90%" rounded="20">
+                        { this.state.products.map( (result, i) =>  
+                            <Box alignItems="center" w="90%" rounded="20" key={i}>
                                 <Box maxW="100%" rounded="20" overflow="hidden" 
                                     borderColor="rgba(230, 230, 230, 1)" borderWidth="1" >
                                     <Box>
                                         <AspectRatio w="100%" ratio={16 / 9} >
-                                            <Image source={{ uri: item.thumbnail }} alt="image"/>
+                                            <Image source={{ uri: result.thumbnail }} alt="image"/>
                                         </AspectRatio>
                                     </Box>
-                                    <Stack p="3" space={2}>
+                                    <Stack p="3" pl="6" pr="5" space={2} >
                                         <Stack space={0.5} >
                                             <Text ml="-0.5" mt="0" style={ styles.itemCategory }>
-                                                {item.category}
+                                                {result.category}
                                             </Text>
                                             <Heading size="md" ml="-0.5" style={ styles.itemTitulo }>
-                                                {item.title}
+                                                {result.title}
                                             </Heading>  
                                         </Stack>
                                         <Text fontWeight="400" style={ styles.itemDescrip }>
-                                            {item.description}
+                                            {result.description}
                                         </Text>
                                         <HStack alignItems="center" space={10} justifyContent="space-between" mt="3">
                                             <HStack alignItems="center">
@@ -70,7 +70,7 @@ export default class AppContainer extends React.Component {
                                                 </Link >
                                             </HStack>
                                             <HStack alignItems="center">
-                                                <Text style={ styles.itemPrice }>${item.price}</Text>
+                                                <Text style={ styles.itemPrice }>${result.price}</Text>
                                             </HStack>
                                         </HStack>
                                     </Stack>

@@ -15,13 +15,13 @@ const styles = StyleSheet.create({
     textBar: {
         color: 'rgba(255, 255, 255, 1)',
         opacity: 2,
-        //fontFamily: 'OpenSans_400Regular', 
+        fontFamily: 'OpenSans_400Regular', 
         fontSize: 18,
         fontWeight: '400'
     },
     textTitle: {
         color: 'rgba(255, 255, 255, 1)',
-        //fontFamily: 'OpenSans_400Regular', 
+        fontFamily: 'OpenSans_400Regular', 
         fontSize: 20,
         fontWeight: '800',
         lineHeight: 26,
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     textLink: {
         color: 'rgba(255, 255, 255, 1)',
         opacity: 2,
-        //fontFamily: 'OpenSans_400Regular', 
+        fontFamily: 'OpenSans_400Regular', 
         fontSize: 16,
         fontWeight: '400',
     }
