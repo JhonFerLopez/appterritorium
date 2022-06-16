@@ -1,14 +1,14 @@
 import React, { useCallback, useEffect, useState } from "react";
 import * as SplashScreen from 'expo-splash-screen';
 import * as Font from 'expo-font';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
 import AppContainer from './src/AppNavigation';
 import {
   OpenSans_400Regular,
 } from '@expo-google-fonts/open-sans';
 
 export default function App() {
-  const [appIsReady, setAppIsReady] = useState(false);
+  /*const [appIsReady, setAppIsReady] = useState(false);
 
   useEffect(() => {
   async function prepare() {
@@ -34,8 +34,8 @@ export default function App() {
    
    if (!appIsReady) {
     return null;
-   }
+   }*/
   return (    
-      <AppContainer onLayout={onLayoutRootView} />
+    <AppContainer /*onLayout={onLayoutRootView}*//>
   );
 }
